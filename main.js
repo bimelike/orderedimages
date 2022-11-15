@@ -25,18 +25,18 @@ const createImage = function (imgPath) {
 
 async function loadImages() {
 
-    let img = await createImage(`/img/img-1.jpg`)
+    let img = await createImage(`./img/img-1.jpg`)
 
     addImage(img);
     await wait(2);
     img.classList.add('hidden');
 
-    img = await createImage(`/img/img-2.jpg`);
+    img = await createImage(`./img/img-2.jpg`);
     addImage(img);
     await wait(2);
     img.classList.add('hidden');
 
-    img = await createImage(`/img/img-3.jpg`);
+    img = await createImage(`./img/img-3.jpg`);
     addImage(img);
 
 }
